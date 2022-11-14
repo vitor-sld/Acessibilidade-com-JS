@@ -1,0 +1,136 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+h1,h2,h3,p{
+    
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+h1{
+    font-size: 25pt;
+    text-align: start;
+    line-height: 35px;
+    margin: 10px 0px;
+    transition: 0.5s;
+}
+h2, h3{
+    font-size: 18pt;
+    text-align: start;
+    margin: 10px 0px;
+    transition: 0.5s;
+}
+
+p, a{
+    word-spacing: 0.8px;
+    letter-spacing: 0.4px;
+    text-align: start;
+    font-size: 12pt;
+    line-height: 25px;
+    transition: 0.5s;
+}
+a{
+    text-decoration: none;
+    font-size: 115%;
+    text-transform: uppercase;
+    color: #ccc;
+    margin: 0 30px;
+}
+header{
+    height: 50px;
+    width: 100%;
+    background-color: #000;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+header > div#navMestre{
+    display: flex;
+    justify-content: center;
+}
+header > div#navMestre > div#navCentro{
+    background-image: url(../logo.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100px;
+    height: 50px;
+    cursor: pointer;
+}
+header > div#navCentro, div#navEsquerda, div#navDireita{
+    margin: auto 40px;
+    
+}
+
+section#bloco-home{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+section > div#espaco-conteudo-direito, div#espaco-conteudo-esquerdo{
+    width: 20%;
+    height: inherit;
+    background: #fff;
+}
+
+
+section > div#espaco-conteudo-esquerdo > div#anuncioEsquerdoTop{
+    background-color:#fff;
+    border: #000 1px solid;
+    width: 200px;
+    height: 500px;
+    margin: 20px auto 0 auto;
+    text-align: inherit;
+}
+
+section > div#espaco-conteudo-direito > div#anuncioDireitoTop, div#anuncioDireitoBottom{
+    background-color:#fff;
+    border: #000 1px solid;
+    width: 200px;
+    height: 250px;
+    margin: auto;
+    text-align: inherit;
+    margin: 20px auto 0 auto;
+
+
+}
+
+section > div#espaco-conteudo-direito >  div#anuncioDireitoBottom{
+    margin: 30px auto;
+}
+
+section > div#espaco-conteudo-central{
+    border: 25px solid rgba(0,0,0,0.0);
+    margin-top: 10px;
+    width: 50%;
+    height: auto;
+    transition: 0.5s;
+}
+
+section > div#espaco-conteudo-central > input{
+    width: 30px;
+    height: 30px;
+    background-image:  rgb(221, 221, 221);
+    border: #ccc 1px solid;
+    border-radius: 5px;
+    font-size: 13px;
+    text-align: center;
+    cursor: pointer;
+    transition: transform 0.5s;
+}
+section > div#espaco-conteudo-central > input:hover{
+    transform: scale(1.1);
+    transition: 0.5s;
+    background-image:  rgb(195, 194, 194);
+
+}
+.backgroundBlack{
+    color: white;
+    background-color: #000 !important;
+    transition: 1s;
+}
+.bold{
+font-weight: 800;
+transition: 0.5s;
+}
